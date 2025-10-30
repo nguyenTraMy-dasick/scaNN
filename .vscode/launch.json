@@ -10,7 +10,7 @@
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "MIMode": "gdb",
-            "preLaunchTask": "VOTIEN_DSA1_HK251"
+            "preLaunchTask": "DSA_scaNN"
         },
         {
             "name": "Debug: 1 Cases",
@@ -23,7 +23,8 @@
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "MIMode": "gdb",
-            "preLaunchTask": "VOTIEN_DSA1_HK251"
+            "preLaunchTask": "DSA_scaNN"
         }
     ]
+
 }
