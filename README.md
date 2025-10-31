@@ -1,15 +1,29 @@
 # ScaNN (Scalable Nearest Neighbors)
 
-## Giới thiệu
-Đề tài này nhằm khám phá và thực hiện thuật toán ScaNN - một giải pháp tìm kiếm vector gần đúng do Google phát triển. ScaNN được sử dụng trong các hệ thống lớn như Google Search và TensorFlow, nhờ khả năng truy vấn vector với độ chính xác cao và mức sử dụng bộ nhớ tối ưu.
+## Introduction
+This project explores and implements **ScaNN** — an Approximate Nearest Neighbor Search (ANN) algorithm developed by **Google Research**. ScaNN is used in large-scale systems like **Google Search** and **TensorFlow**, known for its ability to **accelerate vector queries with high accuracy** and **optimized memory usage**.
 
-## Mục tiêu
-- Nghiên cứu kiến trúc và cơ chế hoạt động của **ScaNN**, bao gồm:
-  - **Partitioning** (phân vùng)
-  - **Scoring** (tính điểm tương đồng)
-  - **Reordering** (sắp xếp lại kết quả)
-- So sánh hiệu năng giữa **ScaNN** và các thuật toán ANN khác (HNSW, Faiss, Annoy, brute-force).
-- Xây dựng **hệ thống tìm kiếm top-K vector gần đúng**, có thể chạy trên Google Colab.
-- Đánh giá **thời gian truy vấn, độ chính xác, và mức tiêu tốn bộ nhớ**.
+## Objectives
+- Study ScaNN's architecture and mechanisms, including:
+  - **Partitioning** strategies
+  - **Scoring** methods for similarity measurement
+  - **Reordering** techniques for result refinement
+- Compare performance between **ScaNN** and other ANN algorithms (HNSW, Faiss, Annoy, brute-force).
+- Build a **top-K approximate nearest neighbor search system** compatible with Google Colab.
+- Evaluate **query time, accuracy, and memory consumption**.
 
-## Cài đặt
+## Project Structure
+```
+scann/
+├── main.py
+├── data/
+│   ├── prepare_images.py
+│   ├── prepare_texts.py
+├── search/
+│   ├── brute_force.py
+│   ├── scann_search.py
+└── eval/
+    ├── compare_performance.py
+    ├── visualize.py
+```
+
