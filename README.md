@@ -27,3 +27,23 @@ scann/
     ├── visualize.py
 ```
 
+## Installation
+### 1. Clone Repository
+```
+git clone https://github.com/nguyenTraMy-dasick/scaNN
+cd scaNN
+```
+### 2. Set Up Python Environment
+```
+pip install -r requirements.txt
+```
+For Google Colab:
+```
+!pip install scann numpy scikit-learn matplotlib sentence-transformers
+```
+
+## How to Run
+### 1. Run Brute-Force Baseline
+```
+python src/brute_force.py
+```
