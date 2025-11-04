@@ -14,17 +14,18 @@ This project explores and implements **ScaNN** — an Approximate Nearest Neighb
 
 ## Project Structure
 ```
-scann/
-├── main.py
-├── data/
-│   ├── prepare_images.py
-│   ├── prepare_texts.py
-├── search/
-│   ├── brute_force.py
-│   ├── scann_search.py
-└── eval/
-    ├── compare_performance.py
-    ├── visualize.py
+├── data/                 
+├── src/
+│   ├── brute_force.py    
+│   ├── scann_search.py   
+│   ├── evaluate.py       
+│   └── visualize.py      
+├── notebook/
+│   └── demo_colab.ipynb  
+├── report/
+│   └── report.pdf       
+├── video_demo/           
+└── README.md
 ```
 
 ## Installation
