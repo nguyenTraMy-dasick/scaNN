@@ -14,37 +14,31 @@ This project explores and implements **ScaNN** — an Approximate Nearest Neighb
 
 ## Project Structure
 ```
-├── data/                 
-├── src/
-│   ├── brute_force.py    
-│   ├── scann_search.py   
-│   ├── evaluate.py       
-│   └── visualize.py      
-├── notebook/
-│   └── demo_colab.ipynb  
+├── demo_colab.ipynb 
+├── scann.py                    
 ├── report/
 │   └── report.pdf       
 ├── video_demo/           
 └── README.md
 ```
 
-## Installation
-### 1. Clone Repository
+## Installation and Setup
+
+This project is designed to run on Google Colab to leverage hardware acceleration.
+
+To set up the environment, run the following commands to install compatible library versions:
+
 ```
-git clone https://github.com/nguyenTraMy-dasick/scaNN
-cd scaNN
-```
-### 2. Set Up Python Environment
-```
-pip install -r requirements.txt
-```
-For Google Colab:
-```
-!pip install scann numpy scikit-learn matplotlib sentence-transformers
+pip install numpy==1.26.4 tensorflow==2.16.2 scann==1.3.1 keras==3.3.3 ml-dtypes==0.3.2 protobuf==4.25.8 tensorboard==2.16.2
+pip install sentence-transformers scikit-learn matplotlib pillow tqdm datasets
 ```
 
 ## How to Run
-### 1. Run Brute-Force Baseline
-```
-python src/brute_force.py
-```
+
+* Open the Notebook: Load the provided .ipynb file or scann.py into Google Colab.
+
+* Input Collection: Execute the input cell to choose your search mode (1 for Image, 2 for Text) and specify the desired K value.
+
+* Data Processing: The system will automatically stream the dataset (ImageNet-Sketch or MS MARCO/AG News) and extract features.
+
+* Performance Analysis: Review the generated tables and graphs to compare ScaNN variants against the baseline.
