@@ -42,3 +42,7 @@ pip install sentence-transformers scikit-learn matplotlib pillow tqdm datasets
 * Data Processing: The system will automatically stream the dataset (ImageNet-Sketch or MS MARCO/AG News) and extract features.
 
 * Performance Analysis: Review the generated tables and graphs to compare ScaNN variants against the baseline.
+
+## Demo Video
+Image: https://github.com/nguyenTraMy-dasick/scaNN/blob/main/scaNN_image.mkv
+Text: https://github.com/nguyenTraMy-dasick/scaNN/blob/main/scaNN_text.mkv
